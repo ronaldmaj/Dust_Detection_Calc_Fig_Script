@@ -1,4 +1,7 @@
 # Dust_Detection_Calc_Fig_Script
+
+## Run the script file 'Dust_Paper_Revised_Script.m' in order to obtain the calculations and figures of the paper
+
 This repository includes all the calculations and figures produced in the writing of the paper: 
 Maj R. and Cairns I.H.  (2018) "Dust detection via voltage power spectroscopy on a CubeSat in Earth's ionosphere".
 
