@@ -542,20 +542,20 @@ tic
 j = 4e14;
 
 % ---------------------Load potentials from prior run ---------------------
-%load('Dust_Paper_Global_Potentials.mat')
+load('Dust_Paper_Global_Potentials.mat')
 % ---------------------------Calculate from scratch -----------------------
 
 % We calculate the potential of both the spacecraft body and the antenna:
 
 % Calculation of potential of the spacecraft at each height around globe
-[P300] = PotentialNew(Ne300D, Ne300D, Te300D, Te300D, 0.06, j, 300, 0);
-[P800] = PotentialNew(Ne800D, Ne800D, Te800D, Te800D, 0.06, j, 800, 0);
-[P1500]= PotentialNew(Ne1500D,Ne1500D,Te1500D,Te1500D,0.06, j, 1500,0);
+%[P300] = PotentialNew(Ne300D, Ne300D, Te300D, Te300D, 0.06, j, 300, 0);
+%[P800] = PotentialNew(Ne800D, Ne800D, Te800D, Te800D, 0.06, j, 800, 0);
+%[P1500]= PotentialNew(Ne1500D,Ne1500D,Te1500D,Te1500D,0.06, j, 1500,0);
 
 % Calculation of potential of the antenna at each height around the globe
-[P_a300] = PotentialNew(Ne300D, Ne300D, Te300D, Te300D, S_a, j, 300, 1);
-[P_a800] = PotentialNew(Ne800D, Ne800D, Te800D, Te800D, S_a, j, 800, 1);
-[P_a1500]= PotentialNew(Ne1500D,Ne1500D,Te1500D,Te1500D,S_a, j, 1500,1);
+%[P_a300] = PotentialNew(Ne300D, Ne300D, Te300D, Te300D, S_a, j, 300, 1);
+%[P_a800] = PotentialNew(Ne800D, Ne800D, Te800D, Te800D, S_a, j, 800, 1);
+%[P_a1500]= PotentialNew(Ne1500D,Ne1500D,Te1500D,Te1500D,S_a, j, 1500,1);
 
 %--------------------------------------------------------------------------
 
@@ -606,17 +606,17 @@ f_t_800 = mean(mean(tran_omega800))/(2*pi);
 f_t_1500 = mean(mean(tran_omega1500))/(2*pi);
 
 % ------------Load QTN and Shot Noise spectra from prior run---------------
-%load('Dust_Paper_QTN_Shot_Spectra.mat')
+load('Dust_Paper_QTN_Shot_Spectra.mat')
 % ---------------Calculate QTN and Shot Noise from scratch-----------------
 
 % Calculation of the voltage power spectra for QTN and shot noise at each
 % altitude:
-[V2qtn300, V2s300, ~, ~] = plasma_QTN_shot_spectra(l,Ne300,Te300,a,...
-    0,f_min,f_max,n_f,1,AP_a300,1e5,1e-5,0.75);
-[V2qtn800, V2s800, ~, ~] = plasma_QTN_shot_spectra(l,Ne800,Te800,a,...
-    0,f_min,f_max,n_f,1,AP_a800,1e5,1e-5,0.75);
-[V2qtn1500,V2s1500,~,~] = plasma_QTN_shot_spectra(l,Ne1500,Te1500,a,...
-    0,f_min,f_max,n_f,1,AP_a1500,1e5,1e-5,0.75);
+%[V2qtn300, V2s300, ~, ~] = plasma_QTN_shot_spectra(l,Ne300,Te300,a,...
+%    0,f_min,f_max,n_f,1,AP_a300,1e5,1e-5,0.75);
+%[V2qtn800, V2s800, ~, ~] = plasma_QTN_shot_spectra(l,Ne800,Te800,a,...
+%    0,f_min,f_max,n_f,1,AP_a800,1e5,1e-5,0.75);
+%[V2qtn1500,V2s1500,~,~] = plasma_QTN_shot_spectra(l,Ne1500,Te1500,a,...
+%    0,f_min,f_max,n_f,1,AP_a1500,1e5,1e-5,0.75);
 
 %--------------------------------------------------------------------------
 

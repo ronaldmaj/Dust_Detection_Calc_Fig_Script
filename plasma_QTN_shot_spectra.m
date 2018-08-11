@@ -39,7 +39,7 @@ function [V2QTN, V2S, Z_a, w_vec] = plasma_QTN_shot_spectra(l,N,T,a,...
     end
 
     % Faddeeva function:
-    W = @(x) faddeeva(x);
+    W = @(x) faddeeva1(x);
 
     % Frequency vector
     f = logspace(log10(fmin),log10(fmax),n);
