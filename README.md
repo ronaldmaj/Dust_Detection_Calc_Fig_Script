@@ -1,11 +1,11 @@
 # Dust_Detection_Calc_Fig_Script
 
-## Run the script file 'Dust_Paper_Revised_Script.m' in order to obtain the calculations and figures of the paper
+## Run the script file 'Dust_Paper_Revised_Script.m' to obtain the calculations and figures of the paper
 
-This repository includes all the calculations and figures produced in the writing of the paper: 
+This repository includes the script and associated files necessary to produce the calculations and figures of the paper: 
 Maj R. and Cairns I.H.  (2018) "Dust detection via voltage power spectroscopy on a CubeSat in Earth's ionosphere".
 
-The script runs in MATLAB, prints out the calculations and produces MATLAB figures.
+The script runs in MATLAB. Copy all files to your present working directory and run the script for calculations to be printed out and MATLAB figures to be produced.
 Not all calculated variables are printed out but these can be investigated as they should be saved to the working space.
 The figures can be saved as .eps files by removing the '%' from the appropriate comment
 
