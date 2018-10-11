@@ -1,12 +1,13 @@
 % Reference: "Dust detection via voltage power spectroscopy on a Cubesat in
-% Earth's ionosphere" Maj R. and Cairns I.H., JGR: Space Physics (2018) 
+% Earth's ionosphere" Maj R. and Cairns I.H., JGR: Space Physics (2018)
+% https://doi.org/10.1029/2018JA025546
 
 % This script outlines the assumptions and working for the calculation of
 % the dust impact spectra for a CubeSat in the Earth's ionosphere. This
 % includes the predicted spectra from Space Debris, Interplanetary dust as
 % well as the dust cloud created from an In-Orbit Satellite Collision.
 % This also includes the commands necessary for producing the figures that 
-% were presented in the revised submission to JGR: Space Physics (00/00/00)
+% were presented in the revised submission to JGR: Space Physics (2018-09-03)
 
 % Firstly, we define some parameters and constants to be used throughout 
 % the rest of the script:
